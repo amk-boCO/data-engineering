@@ -25,7 +25,7 @@ describe FileUploader do
       let(:item) { double(id: 20) }
       let(:merchant) { double(id: 33) }
 
-      before { PurchaseRecord.stub(:create!) }
+      before { PurchaseRecord.stub(:create!).and_return(double(id: 1)) }
 
       it 'creates records for customers' do
         expect(CustomerRecord).to receive(:find_or_create_by!).with({name: 'Snake Plissken'}).

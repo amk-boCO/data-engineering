@@ -1,5 +1,12 @@
 <p>Please upload a tab delimited file:</p>
 
+<% if flash[:error].present? %>
+  <div style="color: #ff0000">
+    <h4>There were some issues:</h4>
+    <h4><%= flash[:error] %></h4>
+  </div>
+<% end %>
+
 <%= form_tag('/files/upload', multipart: true) do %>
   <div>
     <%= label_tag :upload, :file %>
