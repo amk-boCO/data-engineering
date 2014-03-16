@@ -1,0 +1,9 @@
+<p>Please upload a tab delimited file:</p>
+
+<%= form_tag('/files/upload') do %>
+  <div>
+    <%= label_tag :upload, :file %>
+    <%= file_field :upload, :file %>
+  </div>
+  <div><%= submit_tag 'Upload' %></div>
+<% end %>
