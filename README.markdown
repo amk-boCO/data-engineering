@@ -1,4 +1,10 @@
-# Challenge for Software Engineer - Big Data 
+# Setup
+
+1. Clone repository
+2. `bundle install` in cloned directory (e.g. "project root")
+3. `cp config/database.yml.example config/database.yml`
+
+# Challenge for Software Engineer - Big Data
 To better assess a candidates development skills, we would like to provide the following challenge.  You have as much time as you'd like (though we ask that you not spend more than a few hours).
 
 There are three jobs that both use this challenge:

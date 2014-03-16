@@ -1,6 +1,6 @@
 <p>Please upload a tab delimited file:</p>
 
-<%= form_tag('/files/upload') do %>
+<%= form_tag('/files/upload', multipart: true) do %>
   <div>
     <%= label_tag :upload, :file %>
     <%= file_field :upload, :file %>
